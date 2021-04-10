@@ -165,7 +165,7 @@ filled_median <- median(new_daily$daily_steps)
 * The new daily average number of steps is 10766. 
 * The new daily median number of steps is 10766.
 
-The new daily average and median are higher with the imputed data. I am guessing that the mean and the median are identical due to the imputation method.  (I created a data set (new_daily_data.csv), and the totals for the days with missing data are equal to 1.0766189\times 10^{4})
+The new daily average and median are higher with the imputed data. I am guessing that the mean and the median are identical due to the imputation method.  (I created a data set (new_daily_data.csv), and the totals for the days with missing data are equal to 10766
 
 ## Are there differences in activity patterns between weekdays and weekends?
 
