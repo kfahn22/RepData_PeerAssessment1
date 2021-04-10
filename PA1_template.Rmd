@@ -7,7 +7,6 @@ output:
 ---
 
 ```{r setoptions, echo=TRUE}
-options(digits=2)
 ```
 ## Loading and preprocessing the data
 
@@ -45,8 +44,8 @@ daily_mean <- mean(daily$daily_steps, na.rm = TRUE)
 daily_median <- median(daily$daily_steps, na.rm = TRUE)
 ```
 
-* The daily average number of steps is `r daily_mean`. 
-* The daily median number of steps is `r daily_median`.
+* The daily average number of steps is `r round(daily_mean, digits=0)`. 
+* The daily median number of steps is `r sprintf("%.0f", daily_median)`.
 
 ## What is the average daily activity pattern?
 
@@ -107,8 +106,8 @@ Here is the code to recalculate the mean and median total number of steps taken 
 filled_mean <- mean(new_daily$daily_steps)
 filled_median <- median(new_daily$daily_steps)
 ```
-* The new daily average number of steps is `r filled_mean`. 
-* The new daily median number of steps is `r filled_median`.
+* The new daily average number of steps is `r sprintf("%.0f", filled_mean)`. 
+* The new daily median number of steps is `r sprintf("%.0f", filled_median)`.
 
 The new daily average and median are higher with the imputed data. I am guessing that the mean and the median are identical due to the imputation method.  (I created a data set (new_daily_data.csv), and the totals for the days with missing data are equal to `r filled_mean`)
 

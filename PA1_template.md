@@ -7,9 +7,6 @@ output:
 ---
 
 
-```r
-options(digits=2)
-```
 ## Loading and preprocessing the data
 
 Here is the code to load, read, and inspect the data, which consists of two months of number of steps taken in 5 minute intervals from an anonymous individual collected during October and November, 2012. 
@@ -82,8 +79,8 @@ daily_mean <- mean(daily$daily_steps, na.rm = TRUE)
 daily_median <- median(daily$daily_steps, na.rm = TRUE)
 ```
 
-* The daily average number of steps is 9354.23. 
-* The daily median number of steps is 1.04\times 10^{4}.
+* The daily average number of steps is 9354. 
+* The daily median number of steps is 10395.
 
 ## What is the average daily activity pattern?
 
@@ -165,10 +162,10 @@ Here is the code to recalculate the mean and median total number of steps taken 
 filled_mean <- mean(new_daily$daily_steps)
 filled_median <- median(new_daily$daily_steps)
 ```
-* The new daily average number of steps is 1.08\times 10^{4}. 
-* The new daily median number of steps is 1.08\times 10^{4}.
+* The new daily average number of steps is 10766. 
+* The new daily median number of steps is 10766.
 
-The new daily average and median are higher with the imputed data. I am guessing that the mean and the median are identical due to the imputation method.  (I created a data set (new_daily_data.csv), and the totals for the days with missing data are equal to 1.08\times 10^{4})
+The new daily average and median are higher with the imputed data. I am guessing that the mean and the median are identical due to the imputation method.  (I created a data set (new_daily_data.csv), and the totals for the days with missing data are equal to 1.0766189\times 10^{4})
 
 ## Are there differences in activity patterns between weekdays and weekends?
 

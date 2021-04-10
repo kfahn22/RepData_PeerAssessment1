@@ -376,7 +376,6 @@ summary {
 </div>
 
 
-<pre class="r"><code>options(digits=2)</code></pre>
 <div id="loading-and-preprocessing-the-data" class="section level2">
 <h2>Loading and preprocessing the data</h2>
 <p>Here is the code to load, read, and inspect the data, which consists of two months of number of steps taken in 5 minute intervals from an anonymous individual collected during October and November, 2012.</p>
@@ -419,8 +418,8 @@ g + geom_col(col=&quot;purple&quot;)+
 <pre class="r"><code>daily_mean &lt;- mean(daily$daily_steps, na.rm = TRUE)
 daily_median &lt;- median(daily$daily_steps, na.rm = TRUE)</code></pre>
 <ul>
-<li>The daily average number of steps is 9354.23.</li>
-<li>The daily median number of steps is 1.0410^{4}.</li>
+<li>The daily average number of steps is 9354.</li>
+<li>The daily median number of steps is 10395.</li>
 </ul>
 </div>
 <div id="what-is-the-average-daily-activity-pattern" class="section level2">
@@ -473,10 +472,10 @@ g + geom_col(col=&quot;green&quot;)+
 <pre class="r"><code>filled_mean &lt;- mean(new_daily$daily_steps)
 filled_median &lt;- median(new_daily$daily_steps)</code></pre>
 <ul>
-<li>The new daily average number of steps is 1.0810^{4}.</li>
-<li>The new daily median number of steps is 1.0810^{4}.</li>
+<li>The new daily average number of steps is 10766.</li>
+<li>The new daily median number of steps is 10766.</li>
 </ul>
-<p>The new daily average and median are higher with the imputed data. I am guessing that the mean and the median are identical due to the imputation method. (I created a data set (new_daily_data.csv), and the totals for the days with missing data are equal to 1.0810^{4})</p>
+<p>The new daily average and median are higher with the imputed data. I am guessing that the mean and the median are identical due to the imputation method. (I created a data set (new_daily_data.csv), and the totals for the days with missing data are equal to 1.076618910^{4})</p>
 </div>
 <div id="are-there-differences-in-activity-patterns-between-weekdays-and-weekends" class="section level2">
 <h2>Are there differences in activity patterns between weekdays and weekends?</h2>
